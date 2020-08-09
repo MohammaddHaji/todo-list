@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+body {
+  background: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Sriracha', cursive;
+}
+
+.form {
+  width: 500px;
+  background-color: rgb(87, 163, 255);
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px 5px;
+}
+
+.input {
+  padding: 10px 10px;
+  margin: 10px 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.tasks {
+  padding: 1px 10px;
+  background-color: white;
+  margin: 5px 10px;
+  border-radius: 5px;
+}
+
+.items {
+  background-color: rgb(77, 247, 74);
+  border: 2px solid rgb(77, 247, 74);
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+
+.btn {
+  background-color: white;
+  border: 2px solid rgb(77, 247, 74);
+  border-radius: 5px;
+  padding: 5px 5px;
+  margin: 0px 3px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'times new roman'
+}
+
+.btn:hover {
+  background-color: rgb(77, 247, 74);
+  color: white;
+}
+
+.textbox {
+  width: 55%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 5px;
+  outline: none;
+}
+
+.textbox:focus {
+  background-color: rgb(237, 237, 230);
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+a, p {
+  text-decoration: none;
+  color: black;
+}

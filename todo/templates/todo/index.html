@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TODO APP</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <h1>Things to do:</h1>
+    <div class="form">
+      <div class="input">
+        <form action="/" method="post">
+          {% csrf_token %}
+          {{form}}
+          <input class="btn" type="submit" value="Add">
+          <a href="{% url 'deleteAllCompleted' %}"><button class="btn" type="button" name="button">Delete completed</button></a>
+        </form>
+      </div>
+      <div class="tasks">
+        {% for task in tasks %}
+          <a href="{% url 'completed' task.id %}"><p class='items'>
+            {% if task.complete == True %}
+              <del>{{ task.title }}</del>
+            {% else %}
+              {{ task.title }}
+            {% endif%}
+          </p></a>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
